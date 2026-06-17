@@ -1,6 +1,6 @@
 # Enhancing training data pipelines with Lance and the multimodal lakehouse
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lancedb/tmls-2026-demo/blob/main/notebooks/colab_textvqa_lance.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/lancedb/tmls-2026-demo/blob/main/colab_textvqa_lance.ipynb)
 
 Hands-on materials for the **Toronto Machine Learning Summit (TMLS) 2026** workshop
 **“Enhancing training data pipelines with Lance and the multimodal lakehouse,”**
@@ -17,7 +17,7 @@ Hugging Face dataset, so there's nothing to configure.
 
 ## What the notebook does
 
-[`notebooks/colab_textvqa_lance.ipynb`](./notebooks/colab_textvqa_lance.ipynb) runs the
+[`colab_textvqa_lance.ipynb`](./colab_textvqa_lance.ipynb) runs the
 whole loop on a free T4 (~5 GB peak VRAM, 4-bit QLoRA):
 
 1. **Download** a curated Lance subset from Hugging Face —
@@ -54,9 +54,8 @@ real training run.
 
 ```
 tmls-2026-demo/
-├── notebooks/
-│   ├── colab_textvqa_lance.ipynb   # the workshop notebook (Run-All on a free T4)
-│   └── build_notebook.py           # regenerates the notebook (source of truth)
+├── colab_textvqa_lance.ipynb       # the workshop notebook (Run-All on a free T4)
+├── build_notebook.py               # regenerates the notebook (source of truth)
 ├── vlm/
 │   ├── schema.py                   # the one schema-enforced Lance table
 │   ├── ingest.py                   # raw TextVQA → Lance
