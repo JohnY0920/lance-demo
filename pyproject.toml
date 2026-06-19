@@ -11,13 +11,11 @@ dependencies = [
     "geneva==0.12.0",
     "pyarrow>=15.0.0",
     "numpy>=1.26.0",
-
     # HF data + hub (ingest, Colab bake upload)
     "datasets>=2.18.0",
     "huggingface-hub>=0.24.0",
     "tqdm>=4.66.0",
     "Pillow>=10.0.0",
-
     # Training / eval stack (GPU)
     "torch>=2.4.0",
     "torchvision>=0.19.0",
@@ -28,6 +26,7 @@ dependencies = [
     "bitsandbytes>=0.43.0",   # NF4 QLoRA for the Colab T4 path
     "sentencepiece>=0.2.0",
     "matplotlib>=3.7.0",      # EDA plots in the notebook
+    "polars>=1.41.2",
 ]
 
 [project.scripts]
